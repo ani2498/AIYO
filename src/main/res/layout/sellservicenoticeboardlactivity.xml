@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/inclined_background"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".AiyoBuy.NoticeboardBuyServiceActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp"
+        android:textAlignment="center"
+        android:id="@+id/appbarLayout"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/splash_gradient"
+
+            >
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:id="@+id/backarrowtoolbartv"
+                android:src="@drawable/back_arrow_icon"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:text="AIYO Sell Services"
+                android:textStyle="bold"
+                android:layout_height="wrap_content" />
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/myOfferLL"
+        android:padding="4dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/appbarLayout">
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Search"
+            android:textColorHint="@android:color/background_light"
+            android:paddingStart="16dp"
+            android:singleLine="true"
+            android:imeOptions="actionSearch"
+            android:drawablePadding="8dp"
+            android:drawableEnd="@drawable/search_icon_24"
+            android:layout_gravity="end"
+            android:layout_marginStart="8dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/roundbutton_transparent"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/myOfferLL">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+        </android.support.v7.widget.RecyclerView>
+        <!--For tesing purpose only-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/buyserviceexpandLL"
+            android:layout_margin="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_weight=".5"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_margin="8dp"
+                        android:layout_width="48dp"
+                        android:layout_gravity="center"
+                        android:layout_height="48dp"
+                        android:src="@drawable/chat_icon"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginStart="8dp"
+                        android:layout_gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Name"
+                            android:textSize="16sp"
+                            android:textColor="@android:color/white"
+                            android:maxLines="1"
+                            android:ellipsize="end"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Category"
+                            android:maxLines="1"
+                            android:textColor="@color/TextColor"
+                            android:ellipsize="end"
+                            />
+                        <TextView
+                            android:layout_marginTop="8dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/roundbutton_forgot_password"
+                            android:text="University"
+                            android:textColor="@color/DarkGrey"
+                            android:maxLines="1"
+                            android:ellipsize="end"
+                            android:padding="4dp"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="end"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="end"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="6dp"
+                        android:textColor="@color/endColor"
+                        android:background="@drawable/roundbutton_startcolor"
+                        android:text="Rs. 200"
+                        android:textStyle="bold"
+                        android:layout_gravity="end"
+
+                        />
+
+
+                    <RatingBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="8dp"
+
+                        android:theme="@style/RatingBar"
+                        android:numStars="5"
+                        android:rating="4.5"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="4"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:ellipsize="end"
+                android:textColor="@color/TextColor"
+                android:text="Here the description content will beshown"/>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:background="@color/DarkGrey"
+                android:layout_height="wrap_content">
+                <com.synnapps.carouselview.CarouselView
+                    android:id="@+id/carouselView"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_marginBottom="8dp"
+                    app:fillColor="#FFFFFFFF"
+                    app:pageColor="#00000000"
+                    android:layout_marginTop="16dp"
+                    app:radius="3dp"
+                    app:slideInterval="3000"
+                    app:strokeColor="#FF777777"
+                    app:strokeWidth="1dp"/>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_gradient"
+    tools:context="com.technomize.aiyo.Dashboard.UserDashboardActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp"
+        android:textAlignment="center"
+        android:id="@+id/appbarLayout"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/splash_gradient"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:text="AIYO"
+                android:textStyle="bold"
+                android:layout_height="wrap_content" />
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+<!--
+    <include layout="@layout/content_user_dashboard" />
+-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/offersandnewsLL"
+        android:layout_below="@id/appbarLayout">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center">
+        </android.support.v7.widget.RecyclerView>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:id="@+id/buysellLL"
+        >
+
+
+        <TextView
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:background="@drawable/circular_button"
+            android:text="Buy"
+            android:id="@+id/buyserviceTV"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/endColor"/>
+
+        <TextView
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:drawablePadding="0dp"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/circular_button"
+            android:text="Sell"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/endColor"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buysellLL"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundbutton_transparent"
+            android:hint="What do you need ?"
+            android:drawableRight="@drawable/add_icon_et"
+            android:textSize="16sp"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="4dp"
+            android:textColorHint="@android:color/white"
+            />
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="@android:color/holo_blue_bright"
+        app:borderWidth="0dp"
+        app:rippleColor="@android:color/holo_blue_dark"
+        android:src="@drawable/fab_myoffer_icon"
+        tools:targetApi="lollipop" />
+</RelativeLayout>

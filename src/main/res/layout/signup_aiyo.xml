@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_gradient"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center"
+        >
+        <ImageView
+            android:layout_marginTop="32dp"
+            android:layout_width="96dp"
+            android:layout_gravity="center"
+
+            android:layout_height="96dp"
+            android:src="@drawable/logo"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/signuplinear"
+                android:orientation="vertical"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="8dp">
+
+                <EditText
+                    android:background="@drawable/roundbutton_transparent"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:hint="Full Name"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:textColorHint="@android:color/white"
+                    android:textSize="14sp"
+                    android:singleLine="true"
+                    android:imeOptions="actionNext"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/roundbutton_transparent"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:textColor="@android:color/black"
+                    android:hint="Pick Your City"
+                    android:textColorHint="@android:color/white"
+                    android:textSize="14sp"
+                    android:singleLine="true"
+                    android:imeOptions="actionNext"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/roundbutton_transparent"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"                    android:hint="University or College"
+                    android:textColorHint="@android:color/white"
+                    android:textSize="14sp"
+                    android:singleLine="true"
+                    android:imeOptions="actionNext"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/roundbutton_transparent"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:hint="Student Email Address"
+                    android:textColorHint="@android:color/white"
+                    android:textSize="14sp"
+                    android:singleLine="true"
+                    android:imeOptions="actionNext"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/roundbutton_transparent"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:hint="Username"
+                    android:textColorHint="@android:color/white"
+                    android:textSize="14sp"
+                    android:singleLine="true"
+                    android:imeOptions="actionNext"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/roundbutton_transparent"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:hint="Password"
+                    android:textColorHint="@android:color/white"
+                    android:textSize="14sp"
+                    android:singleLine="true"
+                    android:imeOptions="actionNext"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/roundbutton_transparent"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:hint="Confirm Password"
+                    android:textColorHint="@android:color/white"
+                    android:textSize="14sp"
+                    android:singleLine="true"
+                    android:imeOptions="actionDone"
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/roundbutton_active"
+                    android:text="Sign Up"
+                    android:focusable="true"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginStart="56dp"
+                    android:layout_marginEnd="56dp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@android:color/white"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

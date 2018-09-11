@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/inclined_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp"
+        android:textAlignment="center"
+        android:id="@+id/appbarLayout"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="48dp"
+            android:background="@drawable/splash_gradient"
+
+            >
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:id="@+id/backarrowtoolbartv"
+                android:src="@drawable/back_arrow_icon"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:text="AIYO Buy Services"
+                android:textStyle="bold"
+                android:layout_height="wrap_content" />
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/splash_gradient"
+        android:padding="8dp"
+        android:gravity="center"
+        android:id="@+id/requestnewLL"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Request new service"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:layout_weight="1"/>
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/add_icon_et"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/splash_gradient"
+        android:padding="8dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:id="@+id/requestnewdoneLL"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Request new service"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:layout_weight="1"/>
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/action_done_icon"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="16dp"
+        android:visibility="gone"
+        android:id="@+id/addaservicebuyserviceformLL">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/TextColor"
+                android:text="Service title"/>
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="Add service title"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:textColorHint="@color/TextColor"
+                android:textColor="@android:color/white"
+                android:ellipsize="end"
+                android:background="@drawable/roundbutton_rectsngle_light_bckgnd"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/TextColor"
+                android:text="Description"/>
+            <EditText
+                android:layout_gravity="center|top"
+                android:gravity="center"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:hint="Add service title"
+                android:textSize="14sp"
+                android:maxLines="3"
+                android:imeOptions="actionNext"
+                android:textColorHint="@color/TextColor"
+                android:textColor="@android:color/white"
+                android:ellipsize="end"
+                android:background="@drawable/roundbutton_rectsngle_light_bckgnd"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/TextColor"
+                android:text="Your location"/>
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:textColorHint="@color/TextColor"
+                android:textColor="@android:color/white"
+                android:ellipsize="end"
+                android:background="@drawable/roundbutton_rectsngle_light_bckgnd"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/TextColor"
+                android:text="Price"/>
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:textColorHint="@color/TextColor"
+                android:textColor="@android:color/white"
+                android:paddingStart="8dp"
+                android:drawableStart="@drawable/rs_icon"
+                android:ellipsize="end"
+                android:background="@drawable/roundbutton_rectsngle_light_bckgnd"
+                android:layout_gravity="center"
+                android:inputType="number"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload photos"
+            android:textColor="@color/TextColor"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            >
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="6dp"
+                android:src="@drawable/add_image_icon"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"/>
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="6dp"
+                android:layout_weight="1"
+                android:src="@drawable/add_image_icon"
+                android:layout_marginEnd="8dp"/>
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="6dp"
+                android:layout_weight="1"
+                android:src="@drawable/add_image_icon"
+                android:layout_marginEnd="8dp"/>
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="6dp"
+                android:layout_weight="1"
+                android:src="@drawable/add_image_icon"
+                android:layout_marginEnd="8dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pastdurationbuyservicetv"
+            android:layout_gravity="end"
+            android:text="1 hour"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:textColor="@color/TextColor"
+            android:background="@drawable/roundbutton_rectsngle_light_bckgnd"/>
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:thumbTint="@color/LightGrey"
+            android:max="24"
+            android:progress="1"
+            android:min="1"
+            android:progressTint="@color/startColor"
+            android:id="@+id/durationseekbarbuysrevice"
+            />
+
+    </LinearLayout>
+    </ScrollView>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_below="@id/appbarLayout"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+</RelativeLayout>

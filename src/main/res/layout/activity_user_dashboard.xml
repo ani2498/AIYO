@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <include
+        layout="@layout/app_bar_user_dashboard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:itemTextColor="@android:color/white"
+        android:background="@color/DarkGrey"
+
+        >
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           >
+
+            <TextView
+                android:id="@+id/heading_dashboard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="AIYO Menu"
+                android:textSize="14sp"
+                android:layout_marginTop="64dp"
+                 android:layout_marginStart="16dp"
+                android:textColor="@color/TextColor"
+                />
+            <View
+                android:layout_marginTop="16dp"
+                android:layout_below="@id/heading_dashboard"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:id="@+id/headingView"
+                android:background="@color/LightGrey"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical"
+                android:id="@+id/dashboard_aiyo_support_layout">
+                <View
+                    android:layout_below="@id/heading_dashboard"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/LightGrey"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:padding="12dp"
+                    android:gravity="center"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textAlignment="textStart"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/TextColor"
+                        android:layout_marginStart="16dp"
+                        android:layout_weight="1"
+                        android:text="AIYO Support"
+                        />
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/right_arrow_icon"
+
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_below="@id/headingView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+               >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:padding="12dp"
+                    android:gravity="center"
+                    android:id="@+id/dashboard_profile_layout"
+                    >
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/myprofile_icon" />
+
+                    <TextView
+                        android:id="@+id/testtest"
+                        android:layout_width="wrap_content"
+                        android:textAlignment="textStart"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/TextColor"
+                        android:layout_marginStart="16dp"
+                        android:layout_weight="1"
+                        android:text="My Profile"
+                        />
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/right_arrow_icon"
+
+                        />
+                </LinearLayout>
+                <View
+                    android:layout_below="@id/heading_dashboard"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/LightGrey"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:padding="12dp"
+                    android:id="@+id/dashboard_aiyo_buy_layout"
+                    android:gravity="center"
+                    >
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/sell_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textAlignment="textStart"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/TextColor"
+                        android:layout_marginStart="16dp"
+                        android:layout_weight="1"
+                        android:text="AIYO Buy"
+                        />
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/right_arrow_icon"
+
+                        />
+                </LinearLayout>
+                <View
+                    android:layout_below="@id/heading_dashboard"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/LightGrey"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:padding="12dp"
+                    android:gravity="center"
+                    android:id="@+id/dashboard_aiyo_sell_layout"
+                    >
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/buy_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textAlignment="textStart"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/TextColor"
+                        android:layout_marginStart="16dp"
+                        android:layout_weight="1"
+                        android:text="AIYO Sell"
+                        />
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/right_arrow_icon"
+
+                        />
+                </LinearLayout>
+                <View
+                    android:layout_below="@id/heading_dashboard"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/LightGrey"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:padding="12dp"
+                    android:gravity="center"
+                    android:id="@+id/dashboard_aiyo_bookings_layout"
+                    >
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/my_bookings_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textAlignment="textStart"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/TextColor"
+                        android:layout_marginStart="16dp"
+                        android:layout_weight="1"
+                        android:text="My Bookings"
+                        />
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/right_arrow_icon"
+
+                        />
+                </LinearLayout>
+                <View
+                    android:layout_below="@id/heading_dashboard"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/LightGrey"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:padding="12dp"
+                    android:gravity="center"
+                    android:id="@+id/dashboard_tandc_layout"
+                    >
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/tandc_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textAlignment="textStart"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/TextColor"
+                        android:text="Terms And Conditions"
+                        />
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/right_arrow_icon"
+
+                        />
+                </LinearLayout>
+                <View
+                    android:layout_below="@id/heading_dashboard"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/LightGrey"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:padding="12dp"
+                    android:gravity="center"
+                    android:id="@+id/dashboard_howto_layout"
+                    >
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/howtouse_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textAlignment="textStart"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/TextColor"
+                        android:text="How To Use?"
+                        />
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/right_arrow_icon"
+
+                        />
+                </LinearLayout>
+                <View
+                    android:layout_below="@id/heading_dashboard"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/LightGrey"/>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout>
